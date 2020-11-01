@@ -16,13 +16,13 @@ scanf("%i",&c);
 if (b-c<a && a<b+c && a-c<b && b<a+c && a-b<c && c<a+b){
   
   if (a==b && a==c && b==c)
-    printf("O triangulo é equilátero");
+    printf("O triângulo é equilátero");
   else
     if (a==b || a==c || b==c)
-      printf("O triangulo é isósceles");
+      printf("O triângulo é isósceles");
     else
       if (a!=b && a!=c && b!=c)
-        printf("o triangulo é escaleno");
+        printf("O triângulo é escaleno");
 
 }
 else
