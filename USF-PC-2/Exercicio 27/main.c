@@ -40,16 +40,16 @@ int main(void) {
 }
 
 
-    for (i=1;i<2;i++){
+  for (i=1;i<2;i++){
 
-      for (j=0;j<1;j++){
+    for (j=0;j<1;j++){
        
-        matfinal[i][j] = ((mat[i][j] * mat2[i-1][j]) + (mat[i][j+1] * mat2[i][j]) + (mat[i][j+2] * mat2[i+1][j]));
+      matfinal[i][j] = ((mat[i][j] * mat2[i-1][j]) + (mat[i][j+1] * mat2[i][j]) + (mat[i][j+2] * mat2[i+1][j]));
 
     }
-      for (j=1;j<2;j++){
+    for (j=1;j<2;j++){
        
-        matfinal[i][j] = ((mat[i][j-1] * mat2[i-1][j]) + (mat[i][j] * mat2[i][j]) + (mat[i][j+1] * mat2[i+1][j]));
+      matfinal[i][j] = ((mat[i][j-1] * mat2[i-1][j]) + (mat[i][j] * mat2[i][j]) + (mat[i][j+1] * mat2[i+1][j]));
   }
 }
 
